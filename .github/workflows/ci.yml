@@ -16,3 +16,15 @@ jobs:
                     node-version: '21'
             - name: "Version of Node JS"
               run: node --version
+
+            - name: "Clone The Repo"
+              uses: actions/checkout@v4
+              
+            - name: "ls"
+              uses: ls
+
+            - name: "Install dependencies"
+              run: npm install
+
+            - name: "ls"
+              uses: ls
