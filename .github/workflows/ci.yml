@@ -1,0 +1,18 @@
+name : "Sample React Project"
+
+on:
+    push:
+        branches:
+            - master
+            - main
+
+jobs:
+    build-and-test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Install Node Js"
+              uses: actions/setup-node@v4
+              with:
+                    node-version: '21'
+            - name: "Version of Node JS"
+              run: node --version
