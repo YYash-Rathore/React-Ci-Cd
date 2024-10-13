@@ -31,3 +31,6 @@ jobs:
               
             - name: "Run Build"
               run: "npm run build"
+
+            - name: "ls"
+              run: ls  
